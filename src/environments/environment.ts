@@ -3,7 +3,17 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+
+  /*urlListarTonelaje: 'http://localhost:8080/transporte/tonelaje/listar-tonelaje',
+    urlCrearTonelaje: 'http://localhost:8080/transporte/tonelaje/crear-tonelaje',
+    urlEliminarTonelaje: 'http://localhost:8080/transporte/tonelaje/eliminar-tonelaje'
+  */
+ //Tonelaje
+    urlListarTonelaje: "/transporte/tonelaje/listar-tonelaje",
+    urlCrearTonelaje: '/transporte/tonelaje/crear-tonelaje',
+    urlEliminarTonelaje: '/transporte/tonelaje/eliminar-tonelaje',
+    urlBuscarTonelajePorId: '/transporte/tonelaje/buscar-tonelaje-id'
 };
 
 /*
