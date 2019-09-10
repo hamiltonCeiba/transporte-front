@@ -18,7 +18,8 @@ export const environment = {
     urlActualizarTonelaje:  '/transporte/tonelaje/editar-tonelaje',
 
     //Vehículo
-    urlListarVehiculo: "/transporte/vehiculo/listar-vehiculo"
+    urlListarVehiculo: "/transporte/vehiculo/listar-vehiculo",
+    urlAgregarVehiculo: "/transporte/vehiculo/crear-vehiculo"
 };
 
 /*

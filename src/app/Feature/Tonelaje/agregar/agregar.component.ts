@@ -20,7 +20,6 @@ export class AgregarComponent implements OnInit {
     this.tonelaje.precio = precio;
     this.tonelaje.rango = rango;
     this.tonelaje.id = 0;
-    console.log("datos : "+this.tonelaje.precio +" - "+this.tonelaje.rango);
     this.service.guardarTonelaje(this.tonelaje).subscribe(data => {
       alert("Se ha guardado exitosamente");
       this.router.navigate(["listarTonelaje"]);

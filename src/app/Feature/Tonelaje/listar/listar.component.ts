@@ -26,9 +26,9 @@ export class ListarComponent implements OnInit {
   eliminarTonelaje(tonelaje: Tonelaje) {
     console.log(tonelaje);
     this.service.eliminarTonelaje(tonelaje)
-    .subscribe(data =>{
+    .subscribe(data => {
       this.listTonelaje = this.listTonelaje.filter(tonelada => tonelada !== tonelaje);
-    })
+    } )
   }
 
   listarTonelaje() {

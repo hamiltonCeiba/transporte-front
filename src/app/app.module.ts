@@ -10,6 +10,9 @@ import { FormsModule } from '@angular/forms';
 import { ServicioService } from './Feature/Tonelaje/servicio/servicio.service';
 import { HttpClientModule } from '@angular/common/http';
 import { NavarComponent } from './shared/navar/navar.component';
+import { AgregarVehiculoComponent } from './Feature/Vehiculo/agregar-vehiculo/agregar-vehiculo.component';
+import { EditarVehiculoComponent } from './Feature/Vehiculo/editar-vehiculo/editar-vehiculo.component';
+import { ListarVehiculoComponent } from './Feature/Vehiculo/listar-vehiculo/listar-vehiculo.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,7 +20,10 @@ import { NavarComponent } from './shared/navar/navar.component';
     AgregarComponent,
     EditarComponent,
     AgregarComponent,
-    NavarComponent
+    NavarComponent,
+    ListarVehiculoComponent,
+    AgregarVehiculoComponent,
+    EditarVehiculoComponent
   ],
   imports: [
     BrowserModule,

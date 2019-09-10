@@ -1,0 +1,43 @@
+<div class="container">
+
+    <div class="containter" style="padding: 10px">
+      <button (click)="guardarVehiculo()"  class="btn btn-info">Nuevo</button>
+    </div>
+
+    <div class="card">
+      <div class="card-header" class="text-center">
+        <h3>Vehículos</h3>
+      </div>
+      <div class="card-body">
+        <table class="table table-hover text-center">
+          <thead>
+            <tr>
+              <th>Placa</th>
+              <th>Modelo</th>
+              <th>SOAT</th>
+              <th>Técnico mecánico</th>
+              <th>Capacidad</th>
+              <th>Disponible</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let vehiculo of listVehiculo" class="text-center">
+              <td>{{vehiculo.placa}}</td>
+              <td>{{vehiculo.modelo}}</td>
+              <td>{{vehiculo.soat}}</td>
+              <td>{{vehiculo.tecnomecanico}}</td>
+              <td>{{vehiculo.capacidad}}</td>
+              <td>{{vehiculo.disponible}}</td>
+              <td>
+                <button (click)="editarTonelaje(tonelaje)"  class="btn btn-warning" style="margin-right: 10px">
+
+                  Editar</button>
+                <button (click)="eliminarTonelaje(tonelaje)" class="btn btn-danger">Eliminar </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+

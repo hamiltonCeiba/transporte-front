@@ -1,0 +1,51 @@
+<div class="container col-md-6">
+  <div class="card">
+    <div class="card-header" style="text-align: center">
+      <h3>Agregar Vehículo</h3>
+    </div>
+    <div class="card-body">
+      <form action="">
+        <div class="form-group">
+          <label for="placa">Placa</label>
+          <input [(ngModel)]="vehiculo.placa" name="placa" type="text" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="modelo">Modelo</label>
+          <input [(ngModel)]="vehiculo.modelo" name="modelo" type="number" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="soat">SOAT</label>
+          <input [(ngModel)]="vehiculo.soat" name="soat" type="datetime-local" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="tecno">Técnico mecánico</label>
+          <input [(ngModel)]="vehiculo.tecnomecanico" name="tecno" type="datetime-local" class="form-control">
+        </div>
+        <div class="form-group"  >
+          <label for="tonelajeProperty">Capacidad</label>
+          <select id="selectTonelaje" name="tonelajeProperty" [(ngModel)]="tonelaje" class="form-control" [ngModelOptions]="{standalone: true}">
+            <option *ngFor="let tonelada of listTonelaje"  value= {{tonelada.id}}  ><input name="id"  type="hidden">
+               {{tonelada.rango}}
+            </option>
+          </select>
+          <!--<input [(ngModel)]="vehiculo.capacidad" name="capacidad" type="text" class="form-control"> -->
+          <!--<select class="custom-select">
+            <option [ngValue]="tonelaje" *ngFor="let tonelada of listTonelaje">{{tonelada.rango}}</option>
+          </select> -->
+
+
+
+
+        </div>
+        <div class="form-group">
+          <label for="disponible">Disponible</label>
+          <input [(ngModel)]="vehiculo.disponible" name="disponible" type="checkbox" class="form-control">
+        </div>
+        <div class="center">
+          <button (click)="guardarVehiculo(vehiculo)" class="btn btn-danger">Agregar</button>
+        </div>
+      </form>
+
+    </div>
+  </div>
+</div>
