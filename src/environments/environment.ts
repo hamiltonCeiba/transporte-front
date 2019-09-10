@@ -15,7 +15,10 @@ export const environment = {
     urlCrearTonelaje: '/transporte/tonelaje/crear-tonelaje',
     urlEliminarTonelaje: '/transporte/tonelaje/eliminar-tonelaje',
     urlBuscarTonelajePorId: '/transporte/tonelaje/buscar-tonelaje-id',
-    urlActualizarTonelaje:  '/transporte/tonelaje/editar-tonelaje'
+    urlActualizarTonelaje:  '/transporte/tonelaje/editar-tonelaje',
+
+    //Vehículo
+    urlListarVehiculo: "/transporte/vehiculo/listar-vehiculo"
 };
 
 /*

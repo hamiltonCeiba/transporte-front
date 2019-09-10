@@ -9,6 +9,7 @@ const routes: Routes = [
   {path: 'listarTonelaje', component: ListarComponent},
   {path: 'agregarTonelaje', component: AgregarComponent},
   {path: 'editarTonelaje', component: EditarComponent}
+  
 ];
 
 @NgModule({

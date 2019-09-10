@@ -1,4 +1,9 @@
 <div class="container">
+
+  <div class="containter" style="padding: 10px">
+    <button (click)="agregarTonelaje()"  class="btn btn-warning">Nuevo</button>
+  </div>
+
   <div class="card">
     <div class="card-header" class="text-center">
       <h3>Tonelaje</h3>
@@ -17,7 +22,8 @@
             <td>{{tonelaje.precio}}</td>
             <td>{{tonelaje.rango}}</td>
             <td>
-              <button (click)="editarTonelaje(tonelaje)" class="btn btn-warning" style="margin-right: 10px"> Editar</button>
+              <button (click)="editarTonelaje(tonelaje)" class="btn btn-warning" style="margin-right: 10px">
+                Editar</button>
               <button (click)="eliminarTonelaje(tonelaje)" class="btn btn-danger">Eliminar </button>
             </td>
           </tr>

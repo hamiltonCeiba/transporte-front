@@ -9,13 +9,15 @@ import { EditarComponent } from './Feature/Tonelaje/editar/editar.component';
 import { FormsModule } from '@angular/forms';
 import { ServicioService } from './Feature/Tonelaje/servicio/servicio.service';
 import { HttpClientModule } from '@angular/common/http';
+import { NavarComponent } from './shared/navar/navar.component';
 @NgModule({
   declarations: [
     AppComponent,
     ListarComponent,
     AgregarComponent,
     EditarComponent,
-    AgregarComponent
+    AgregarComponent,
+    NavarComponent
   ],
   imports: [
     BrowserModule,
