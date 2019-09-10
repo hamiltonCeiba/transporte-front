@@ -7,13 +7,13 @@
         <form action="">
           <div class="form-group">
             <label for="range">Rango</label>
-            <input [(ngModel)]="tonelaje.rango" type="text" class="form-control">
+            <input [(ngModel)]="tonelaje.rango" name="rango" type="text" class="form-control">
           </div>
           <div class="form-group">
               <label for="price">Precio</label>
-              <input [(ngModel)]="tonelaje.precio" type="number" class="form-control">
+              <input [(ngModel)]="tonelaje.precio" name="precio" type="number" class="form-control">
             </div>
-            <button (click)="actualizarTonelaje()" class="btn btn-danger">Agregar</button>
+            <button (click)="actualizarTonelaje(tonelaje)" class="btn btn-danger">Agregar</button>
         </form>
 
       </div>

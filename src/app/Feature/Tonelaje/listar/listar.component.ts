@@ -23,4 +23,12 @@ export class ListarComponent implements OnInit {
     this.router.navigate(["editarTonelaje"]);
   }
 
+  eliminarTonelaje(tonelaje: Tonelaje) {
+    console.log(tonelaje);
+    this.service.eliminarTonelaje(tonelaje)
+    .subscribe(data =>{
+      this.listTonelaje = this.listTonelaje.filter(tonelada => tonelada !== tonelaje);
+    })
+  }
+
 }

@@ -8,12 +8,14 @@ export const environment = {
   /*urlListarTonelaje: 'http://localhost:8080/transporte/tonelaje/listar-tonelaje',
     urlCrearTonelaje: 'http://localhost:8080/transporte/tonelaje/crear-tonelaje',
     urlEliminarTonelaje: 'http://localhost:8080/transporte/tonelaje/eliminar-tonelaje'
+    http://localhost:8080/transporte/tonelaje/editar-tonelaje
   */
  //Tonelaje
     urlListarTonelaje: "/transporte/tonelaje/listar-tonelaje",
     urlCrearTonelaje: '/transporte/tonelaje/crear-tonelaje',
     urlEliminarTonelaje: '/transporte/tonelaje/eliminar-tonelaje',
-    urlBuscarTonelajePorId: '/transporte/tonelaje/buscar-tonelaje-id'
+    urlBuscarTonelajePorId: '/transporte/tonelaje/buscar-tonelaje-id',
+    urlActualizarTonelaje:  '/transporte/tonelaje/editar-tonelaje'
 };
 
 /*
