@@ -32,6 +32,6 @@ export class ServicioService {
 
   eliminarTonelaje(tonelaje: Tonelaje) {
     console.log(JSON.parse(JSON.stringify(tonelaje)));
-    return this.http.delete<Tonelaje>(environment.urlEliminarTonelaje, JSON.parse(JSON.stringify(tonelaje)));
+    return this.http.put<Tonelaje>(environment.urlEliminarTonelaje, JSON.parse(JSON.stringify(tonelaje)));
   }
 }
