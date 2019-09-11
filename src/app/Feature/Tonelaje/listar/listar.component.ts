@@ -35,7 +35,7 @@ export class ListarComponent implements OnInit {
     this.router.navigate(["listarTonelaje"]);
   }
 
-  agregarTonelaje(){
+  agregarTonelaje() {
     this.router.navigate(["agregarTonelaje"]);
   }
 

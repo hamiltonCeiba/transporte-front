@@ -15,6 +15,7 @@ export class ListarVehiculoComponent implements OnInit {
 
   ngOnInit() {
     this.service.listarVehiculo().subscribe(data => this.listVehiculo = data);
+    console.log(this.listVehiculo);
   }
 
   guardarVehiculo() {

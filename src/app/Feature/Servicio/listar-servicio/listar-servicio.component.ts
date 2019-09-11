@@ -18,7 +18,7 @@ export class ListarServicioComponent implements OnInit {
   }
 
   guardarServicio() {
-
+    this.router.navigate(['agregarServicio']);
   }
 
 }

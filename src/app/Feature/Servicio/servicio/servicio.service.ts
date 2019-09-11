@@ -13,4 +13,9 @@ export class ServicioService {
   listarServicio() {
     return this.http.get<Servicio[]>(environment.urlListarServicio);
   }
+  guardarServicio(servicio: Servicio) {
+    console.log('servicio: ' + servicio);
+    console.log('JSON generado: ' + JSON.parse(JSON.stringify(servicio)));
+    return this.http.post<Servicio>(environment.urlAgregarServicio, JSON.parse(JSON.stringify(servicio)));
+  }
 }

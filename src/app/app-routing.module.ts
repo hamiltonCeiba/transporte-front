@@ -27,7 +27,7 @@ const routes: Routes = [
   {path: 'agregarConductor', component: CrearConductorComponent},
 
   {path: 'listarServicio', component: ListarServicioComponent},
-  {path: 'agregarConductor', component: CrearServicioComponent}
+  {path: 'agregarServicio', component: CrearServicioComponent}
 
 ];
 

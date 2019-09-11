@@ -17,8 +17,9 @@
             <th>Direccion final</th>
             <th>Municipio destino</th>
             <th>Total servicio</th>
-            <th>Vehiculo asociado</th>
+            <th>Vehículo asociado</th>
             <th>Conductor asociado</th>
+            <th>Opciones</th>
           </tr>
         </thead>
         <tbody>
@@ -28,7 +29,8 @@
             <td>{{servicio.direccionFinal}}</td>
             <td>{{servicio.municipioFinal}}</td>
             <td>{{servicio.totalServ}}</td>
-            <td>{{servicio.vehiculo}}</td>
+            <td>{{servicio.vehiculo.placa}}</td>
+            <td>{{servicio.conductor.primerNombre}} {{servicio.conductor.segundoNombre}} {{servicio.conductor.primerApellido}}</td>
             <td>
               <button (click)="editarVehiculo(vehiculo)"  class="btn btn-warning" style="margin-right: 10px">
 
