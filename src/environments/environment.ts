@@ -11,15 +11,18 @@ export const environment = {
     http://localhost:8080/transporte/tonelaje/editar-tonelaje
   */
  //Tonelaje
-    urlListarTonelaje: "/transporte/tonelaje/listar-tonelaje",
+    urlListarTonelaje: '/transporte/tonelaje/listar-tonelaje',
     urlCrearTonelaje: '/transporte/tonelaje/crear-tonelaje',
     urlEliminarTonelaje: '/transporte/tonelaje/eliminar-tonelaje',
     urlBuscarTonelajePorId: '/transporte/tonelaje/buscar-tonelaje-id',
     urlActualizarTonelaje:  '/transporte/tonelaje/editar-tonelaje',
 
     //Vehículo
-    urlListarVehiculo: "/transporte/vehiculo/listar-vehiculo",
-    urlAgregarVehiculo: "/transporte/vehiculo/crear-vehiculo"
+    urlListarVehiculo: '/transporte/vehiculo/listar-vehiculo',
+    urlAgregarVehiculo: '/transporte/vehiculo/crear-vehiculo',
+    urlBuscarVehiculoPorId: '/transporte/vehiculo/buscar-vehiculo-id',
+    urlActualizarVehiculo:  '/transporte/vehiculo/editar-vehiculo',
+    urlEliminarVehiculo: '/transporte/vehiculo/eliminar-vehiculo'
 };
 
 /*

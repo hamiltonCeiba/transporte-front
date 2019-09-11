@@ -1,7 +1,7 @@
 import { Tonelaje } from './Tonelaje';
 
 export class Vehiculo {
-  id: number;
+  idVehiculo: number;
   placa: string;
   modelo: number;
   soat: string;

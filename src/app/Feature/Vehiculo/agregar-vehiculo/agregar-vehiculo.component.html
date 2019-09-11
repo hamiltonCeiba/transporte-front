@@ -21,21 +21,17 @@
           <label for="tecno">Técnico mecánico</label>
           <input [(ngModel)]="vehiculo.tecnomecanico" name="tecno" type="datetime-local" class="form-control">
         </div>
-        <div class="form-group"  >
+        <div class="form-group">
           <label for="tonelajeProperty">Capacidad</label>
-          <select id="selectTonelaje" name="tonelajeProperty" [(ngModel)]="tonelaje" class="form-control" [ngModelOptions]="{standalone: true}">
-            <option *ngFor="let tonelada of listTonelaje"  value= {{tonelada.id}}  ><input name="id"  type="hidden">
+          <select id="selectTonelaje" name="tonelajeProperty" [(ngModel)]="tonelaje.id" class="form-control">
+            <option *ngFor="let tonelada of listTonelaje"  value= {{tonelada.id}} >
                {{tonelada.rango}}
             </option>
           </select>
-          <!--<input [(ngModel)]="vehiculo.capacidad" name="capacidad" type="text" class="form-control"> -->
-          <!--<select class="custom-select">
-            <option [ngValue]="tonelaje" *ngFor="let tonelada of listTonelaje">{{tonelada.rango}}</option>
-          </select> -->
-
-
-
-
+          <!--<input [(ngModel)]="vehiculo.capacidad" name="capacidad" type="text" class="form-control">
+          <select class="custom-select" name="tonelajeProperty" [(ngModel)]="tonelaje">
+            <option *ngFor="let tonelada of listTonelaje">{{tonelada}}  </option>
+          </select>-->
         </div>
         <div class="form-group">
           <label for="disponible">Disponible</label>

@@ -18,6 +18,7 @@
               <th>Técnico mecánico</th>
               <th>Capacidad</th>
               <th>Disponible</th>
+              <th>Opciones</th>
             </tr>
           </thead>
           <tbody>
@@ -29,10 +30,10 @@
               <td>{{vehiculo.capacidad}}</td>
               <td>{{vehiculo.disponible}}</td>
               <td>
-                <button (click)="editarTonelaje(tonelaje)"  class="btn btn-warning" style="margin-right: 10px">
+                <button (click)="editarVehiculo(vehiculo)"  class="btn btn-warning" style="margin-right: 10px">
 
                   Editar</button>
-                <button (click)="eliminarTonelaje(tonelaje)" class="btn btn-danger">Eliminar </button>
+                <button (click)="eliminarVehiculo(vehiculo)" class="btn btn-danger">Eliminar </button>
               </td>
             </tr>
           </tbody>

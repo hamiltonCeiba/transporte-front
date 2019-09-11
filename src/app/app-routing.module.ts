@@ -5,6 +5,7 @@ import { AgregarComponent } from './Feature/Tonelaje/agregar/agregar.component';
 import { EditarComponent } from './Feature/Tonelaje/editar/editar.component';
 import { ListarVehiculoComponent } from './Feature/Vehiculo/listar-vehiculo/listar-vehiculo.component';
 import { AgregarVehiculoComponent } from './Feature/Vehiculo/agregar-vehiculo/agregar-vehiculo.component';
+import { EditarVehiculoComponent } from './Feature/Vehiculo/editar-vehiculo/editar-vehiculo.component';
 
 
 const routes: Routes = [
@@ -13,7 +14,8 @@ const routes: Routes = [
   {path: 'editarTonelaje', component: EditarComponent},
 
   {path: 'listarVehiculo', component: ListarVehiculoComponent},
-  {path: 'agregarVehiculo', component: AgregarVehiculoComponent}
+  {path: 'agregarVehiculo', component: AgregarVehiculoComponent},
+  {path: 'editarVehiculo', component: EditarVehiculoComponent}
 
 ];
 

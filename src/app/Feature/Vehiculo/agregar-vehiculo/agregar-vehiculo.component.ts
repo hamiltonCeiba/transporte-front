@@ -24,9 +24,9 @@ export class AgregarVehiculoComponent implements OnInit {
   }
 
   guardarVehiculo(vehiculo: Vehiculo) {
-    this.tonelaje.precio = 0.0;
-    this.tonelaje.rango = "";
-  console.log(this.vehiculo.tonelaje);
+    console.log('id ' + this.tonelaje.id);
+    this.vehiculo.tonelaje = this.tonelaje;
+  console.log(this.vehiculo);
     this.service.guardarVehiculo(vehiculo).subscribe(data => {
       alert("Se ha guardado exitosamente");
       this.router.navigate(['listarVehiculo']);

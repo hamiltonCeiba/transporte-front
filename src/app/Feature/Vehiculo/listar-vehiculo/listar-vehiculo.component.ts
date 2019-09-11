@@ -21,4 +21,17 @@ export class ListarVehiculoComponent implements OnInit {
     this.router.navigate(["agregarVehiculo"]);
   }
 
+  editarVehiculo(vehiculo: Vehiculo): void {
+    console.log(vehiculo.idVehiculo);
+    console.log(vehiculo);
+    localStorage.setItem( "id" , vehiculo.idVehiculo.toString());
+    this.router.navigate(["editarVehiculo"]);
+  }
+
+  eliminarVehiculo(vehiculo: Vehiculo){
+    this.service.eliminarVehiculo(vehiculo)
+    .subscribe(data => {
+      this.listVehiculo = this.listVehiculo.filter(car => car !== vehiculo);
+    } );
+  }
 }
