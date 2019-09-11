@@ -22,7 +22,15 @@ export const environment = {
     urlAgregarVehiculo: '/transporte/vehiculo/crear-vehiculo',
     urlBuscarVehiculoPorId: '/transporte/vehiculo/buscar-vehiculo-id',
     urlActualizarVehiculo:  '/transporte/vehiculo/editar-vehiculo',
-    urlEliminarVehiculo: '/transporte/vehiculo/eliminar-vehiculo'
+    urlEliminarVehiculo: '/transporte/vehiculo/eliminar-vehiculo',
+
+    //Conductor
+    urlListarConductor: '/transporte/conductor/listar-conductor',
+    urlAgregarConductor: '/transporte/conductor/crear-conductor',
+
+    //Servicio
+    urlListarServicio: '/transporte/servicio/listar-servicio',
+    urlAgregarServicio: '/transporte/servicio/crear-servicio'
 };
 
 /*

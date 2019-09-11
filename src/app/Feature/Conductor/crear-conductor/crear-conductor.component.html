@@ -1,0 +1,39 @@
+<div class="container col-md-6">
+  <div class="card">
+    <div class="card-header" style="text-align: center">
+      <h3>Agregar Conductor</h3>
+    </div>
+    <div class="card-body">
+      <form action="">
+        <div class="form-group">
+          <label for="cedula">Cédula</label>
+          <input [(ngModel)]="conductor.cedula" name="placa" type="text" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="modelo">Primer nombre</label>
+          <input [(ngModel)]="conductor.primerNombre" name="modelo" type="text" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="soat">Segundo nombre</label>
+          <input [(ngModel)]="conductor.segundoNombre" name="soat" type="text" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="tecno">Primer apellido</label>
+          <input [(ngModel)]="conductor.primerApellido" name="tecno" type="text" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="disponible">Segundo apellido</label>
+          <input [(ngModel)]="conductor.segundoApellido" name="disponible" type="text" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="disponible">celular</label>
+          <input [(ngModel)]="conductor.celular" name="disponible" type="text" class="form-control">
+        </div>
+        <div class="center">
+          <button (click)="guardarConductor(conductor)" class="btn btn-danger">Agregar</button>
+        </div>
+      </form>
+
+    </div>
+  </div>
+</div>

@@ -13,6 +13,11 @@ import { NavarComponent } from './shared/navar/navar.component';
 import { AgregarVehiculoComponent } from './Feature/Vehiculo/agregar-vehiculo/agregar-vehiculo.component';
 import { EditarVehiculoComponent } from './Feature/Vehiculo/editar-vehiculo/editar-vehiculo.component';
 import { ListarVehiculoComponent } from './Feature/Vehiculo/listar-vehiculo/listar-vehiculo.component';
+import { ListarConductorComponent } from './Feature/Conductor/listar-conductor/listar-conductor.component';
+import { CrearConductorComponent } from './Feature/Conductor/crear-conductor/crear-conductor.component';
+import { EditarConductorComponent } from './Feature/Conductor/editar-conductor/editar-conductor.component';
+import { CrearServicioComponent } from './Feature/Servicio/crear-servicio/crear-servicio.component';
+import { ListarServicioComponent } from './Feature/Servicio/listar-servicio/listar-servicio.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,7 +28,12 @@ import { ListarVehiculoComponent } from './Feature/Vehiculo/listar-vehiculo/list
     NavarComponent,
     ListarVehiculoComponent,
     AgregarVehiculoComponent,
-    EditarVehiculoComponent
+    EditarVehiculoComponent,
+    ListarConductorComponent,
+    CrearConductorComponent,
+    EditarConductorComponent,
+    CrearServicioComponent,
+    ListarServicioComponent
   ],
   imports: [
     BrowserModule,

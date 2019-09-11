@@ -17,7 +17,7 @@ export class ListarVehiculoComponent implements OnInit {
     this.service.listarVehiculo().subscribe(data => this.listVehiculo = data);
   }
 
-  guardarVehiculo(){
+  guardarVehiculo() {
     this.router.navigate(["agregarVehiculo"]);
   }
 
