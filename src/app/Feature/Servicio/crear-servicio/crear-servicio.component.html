@@ -22,10 +22,6 @@
           <input [(ngModel)]="servicio.municipioFinal" name="municipioFinal" type="text" class="form-control">
         </div>
         <div class="form-group">
-          <label for="totalServ">Total del servicio</label>
-          <input [(ngModel)]="servicio.totalServ" name="totalServ" type="number" class="form-control">
-        </div>
-        <div class="form-group">
           <label for="objVehiculo">Vehículo que realizará el transporte</label>
           <select id="selectVehiculo" name="objVehiculo" [(ngModel)]="vehiculo.idVehiculo" class="form-control">
             <option *ngFor="let vehiculo of listVehiculo"  value = {{vehiculo.idVehiculo}} >
@@ -34,13 +30,18 @@
           </select>
         </div>
         <div class="form-group">
-          <label for="objVehiculo">Vehículo que realizará el transporte</label>
+          <label for="objVehiculo">Conductor</label>
           <select id="selectConductor" name="objConductor" [(ngModel)]="conductor.id" class="form-control">
             <option *ngFor="let conductor of listConductor"  value = {{conductor.id}} >
                {{conductor.cedula}} - {{conductor.primerNombre}}  {{conductor.segundoNombre}} {{conductor.primerApellido}} {{conductor.segundoApellido}}
             </option>
           </select>
         </div>
+        <div class="form-group">
+            <label for="totalServ">El total del servicio se calculará según las opciones seleccionadas</label>
+            <!--<input [(ngModel)]="servicio.totalServ" name="totalServ" type="number" class="form-control">
+            <button (click)="guardarServicio(servicio)" class="btn btn-danger">Agregar</button>-->
+          </div>
         <div class="center">
           <button (click)="guardarServicio(servicio)" class="btn btn-danger">Agregar</button>
         </div>

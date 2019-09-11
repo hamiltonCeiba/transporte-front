@@ -7,7 +7,7 @@ export class Servicio {
   direccionInicial: string;
   direccionFinal: string;
   municipioFinal: string;
-  totalServ: number;
+  totalServicio: number;
   conductor: Conductor;
   vehiculo: Vehiculo;
 }
